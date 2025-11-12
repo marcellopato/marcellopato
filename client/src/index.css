@@ -174,4 +174,18 @@
       max-width: 1280px; /* Standard content width */
     }
   }
+
+  /* Landing page full-height sections */
+  section {
+    scroll-snap-align: start;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+
+  img {
+    display: block;
+  }
 }

@@ -1,28 +1,50 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { APP_LOGO, APP_TITLE } from "@/const";
-import { Streamdown } from 'streamdown';
-
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
- */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
-
-  // Use APP_LOGO (as image src) and APP_TITLE if needed
-
   return (
     <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
+      {/* Hero Section - Marcello Pato Name */}
+      <section className="w-full h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-red-600 to-red-700">
+        <img
+          src="/hero.png"
+          alt="Marcello Pato - Ira de Deus"
+          className="w-full h-full object-cover"
+        />
+      </section>
+
+      {/* Section 2 - Guitar Cross */}
+      <section className="w-full h-screen flex items-center justify-center overflow-hidden bg-sky-400">
+        <img
+          src="/section2.jpg"
+          alt="Guitar Cross"
+          className="w-full h-full object-cover"
+        />
+      </section>
+
+      {/* Section 3 - Marcello with Guitars */}
+      <section className="w-full h-screen flex items-center justify-center overflow-hidden bg-purple-700">
+        <img
+          src="/section3.jpg"
+          alt="Marcello Pato - Ira de Deus Album"
+          className="w-full h-full object-cover"
+        />
+      </section>
+
+      {/* Section 4 - Police Tape Guitars */}
+      <section className="w-full h-screen flex items-center justify-center overflow-hidden bg-red-600">
+        <img
+          src="/section4.jpg"
+          alt="Police Tape Guitars"
+          className="w-full h-full object-cover"
+        />
+      </section>
+
+      {/* Section 5 - Single Guitar */}
+      <section className="w-full h-screen flex items-center justify-center overflow-hidden bg-white">
+        <img
+          src="/guitar.png"
+          alt="Marcello Pato Guitar"
+          className="w-full h-full object-cover"
+        />
+      </section>
     </div>
   );
 }
