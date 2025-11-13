@@ -1,48 +1,22 @@
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Hero Section - Marcello Pato Name */}
-      <section className="w-full h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-red-600 to-red-700">
+    <div className="w-full">
+      <section
+        className="min-h-screen w-full flex items-center justify-center bg-fixed bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/section4.jpg')", backgroundPosition: "center 60%" }}
+      >
         <img
-          src="/hero.png"
-          alt="Marcello Pato - Ira de Deus"
-          className="w-full h-full object-cover"
+          src="/logo.png"
+          alt="Marcello Pato Logo"
+          className="max-w-[80vw] max-h-[80vh] w-auto h-auto"
         />
       </section>
 
-      {/* Section 2 - Guitar Cross */}
-      <section className="w-full h-screen flex items-center justify-center overflow-hidden bg-sky-400">
+      <section className="h-screen w-full flex items-center justify-center bg-gradient-to-b from-[#071327] to-[#0D2244]">
         <img
-          src="/section2.jpg"
-          alt="Guitar Cross"
-          className="w-full h-full object-cover"
-        />
-      </section>
-
-      {/* Section 3 - Marcello with Guitars */}
-      <section className="w-full h-screen flex items-center justify-center overflow-hidden bg-purple-700">
-        <img
-          src="/section3.jpg"
-          alt="Marcello Pato - Ira de Deus Album"
-          className="w-full h-full object-cover"
-        />
-      </section>
-
-      {/* Section 4 - Police Tape Guitars */}
-      <section className="w-full h-screen flex items-center justify-center overflow-hidden bg-red-600">
-        <img
-          src="/section4.jpg"
-          alt="Police Tape Guitars"
-          className="w-full h-full object-cover"
-        />
-      </section>
-
-      {/* Section 5 - Single Guitar */}
-      <section className="w-full h-screen flex items-center justify-center overflow-hidden bg-white">
-        <img
-          src="/guitar.png"
-          alt="Marcello Pato Guitar"
-          className="w-full h-full object-cover"
+          src="/capinha.png"
+          alt="Capinha"
+          className="max-w-[80vw] max-h-[80vh] w-auto h-auto rounded-md shadow-[0_30px_80px_rgba(0,0,0,0.6)]"
         />
       </section>
     </div>
